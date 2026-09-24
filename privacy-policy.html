@@ -24,7 +24,7 @@
 </head>
 <body>
   <h1>سياسة الخصوصية</h1>
-  <p class="updated">تطبيق Daily Wallet — آخر تحديث: يوليو 2026</p>
+  <p class="updated">تطبيق Daily Wallet — آخر تحديث: سبتمبر 2026</p>
 
   <p>
     مرحباً بك في <strong>Daily Wallet</strong> («التطبيق»). نحن نحترم خصوصيتك ونلتزم بحماية بياناتك.
@@ -33,7 +33,8 @@
 
   <h2>1. ملخص سريع</h2>
   <ul>
-    <li>التطبيق <strong>لا يملك خوادم</strong> — بياناتك المالية تُخزَّن على جهازك.</li>
+    <li>بياناتك المالية تُخزَّن على جهازك ولا تُرفع إلى لوحة الإدارة.</li>
+    <li>بيانات الحساب الأساسية تُخزَّن بشكل آمن لتسجيل الدخول وإدارة الاشتراكات.</li>
     <li>لا نبيع بياناتك ولا نشاركها لأغراض إعلانية.</li>
     <li>الموقع والإشعارات <strong>اختياريان</strong> وتُستخدم فقط للميزات التي تفعّلها.</li>
   </ul>
@@ -44,24 +45,25 @@
     <li>المصروفات والإيرادات (المبلغ، الفئة، التاريخ، الملاحظات)</li>
     <li>الالتزامات الشهرية والديون والأقساط</li>
     <li>إعدادات الراتب ودورة الشهر المالي</li>
-    <li>الاسم والبريد الإلكتروني وصورة الملف الشخصي (إن أدخلتها)</li>
-    <li>تاريخ الميلاد (اختياري — لتذكير عيد الميلاد)</li>
     <li>أوقات التذكير والإعدادات</li>
     <li>مواقع محفوظة للتذكير (إن فعّلت ميزة الموقع)</li>
   </ul>
-  <p>تُخزَّن هذه البيانات باستخدام تخزين محلي على الجهاز (AsyncStorage وSecureStore) ولا تُرفع تلقائياً إلى أي خادم نحن نشغّله.</p>
+  <p>تُخزَّن هذه البيانات المالية باستخدام تخزين محلي على الجهاز (AsyncStorage وSecureStore) ولا تُرفع إلى لوحة الإدارة.</p>
 
-  <h2>3. تسجيل الدخول</h2>
+  <h2>3. بيانات الحساب وتسجيل الدخول</h2>
   <ul>
-    <li><strong>البريد وكلمة المرور:</strong> تُخزَّن بيانات الحساب محلياً على جهازك. كلمة المرور مُشفَّرة (تجزئة) ولا تُخزَّن كنص واضح.</li>
-    <li><strong>Apple Sign-In / Google Sign-In:</strong> عند استخدامها، تتعامل مع مزود الخدمة (Apple أو Google) وفق سياساتهم. نستلم فقط المعلومات اللازمة لإنشاء ملفك المحلي (مثل الاسم والبريد).</li>
+    <li>نخزّن الاسم، البريد الإلكتروني، الدولة، صورة الملف الشخصي الاختيارية، مزود تسجيل الدخول، تاريخ إنشاء الحساب، وآخر وقت استخدام.</li>
+    <li>تُستخدم هذه البيانات لتسجيل الدخول، دعم الحساب، قياس عدد المستخدمين، وإدارة حالة الاشتراك مستقبلاً.</li>
+    <li><strong>البريد وكلمة المرور:</strong> تتم إدارة المصادقة عبر Supabase Auth، ولا يمكننا الاطلاع على كلمة مرورك كنص واضح.</li>
+    <li><strong>Apple Sign-In / Google Sign-In:</strong> نستلم فقط المعلومات التي تسمح بها لإنشاء حسابك، مثل الاسم والبريد.</li>
+    <li>قد نعرض لصاحب التطبيق بيانات الحساب والنشاط الأساسية في لوحة إدارة محمية، دون عرض المصروفات أو الرواتب أو الديون الشخصية.</li>
   </ul>
 
   <h2>4. الموقع الجغرافي</h2>
   <p>
     إذا منحت إذن الموقع، يستخدم التطبيق موقعك لتذكيرك بتسجيل مصروف عند وصولك إلى مكان حفظته
     (مثل محطة وقود أو مول). يعمل الموقع في الخلفية <strong>فقط</strong> عند تفعيل هذه الميزة.
-    <strong>لا نرسل</strong> موقعك إلى خوادمنا — لأنه لا توجد خوادم — ولا نشاركه مع أطراف ثالثة.
+    <strong>لا نرسل</strong> موقعك إلى قاعدة بيانات الحساب أو لوحة الإدارة، ولا نشاركه لأغراض إعلانية.
   </p>
 
   <h2>5. الإشعارات</h2>
@@ -75,41 +77,49 @@
     <li>لا نجمع بياناتك لأغراض إعلانية</li>
     <li>لا نبيع بياناتك لأطراف ثالثة</li>
     <li>لا نتابع نشاطك عبر تطبيقات أو مواقع أخرى</li>
-    <li>لا نخزّن بياناتك المالية على خوادم سحابية تابعة لنا</li>
+    <li>لا نخزّن المصروفات والرواتب والالتزامات والديون على قاعدة بيانات الحساب المركزية</li>
   </ul>
 
   <h2>7. حذف بياناتك</h2>
   <p>
-    يمكنك حذف بياناتك بإلغاء تثبيت التطبيق من جهازك، أو بتسجيل الخروج وحذف الحساب من داخل التطبيق
-    (حسب الخيارات المتاحة). لأن البيانات على جهازك، أنت تتحكم بها بالكامل.
+    يمكنك حذف الحساب من داخل التطبيق. يؤدي ذلك إلى حذف حساب تسجيل الدخول وملفك المركزي،
+    إضافة إلى بيانات المحفظة المخزنة محلياً على الجهاز. ويمكنك أيضاً حذف البيانات المحلية بإلغاء تثبيت التطبيق.
   </p>
 
-  <h2>8. الأطفال</h2>
+  <h2>8. مزودو الخدمة</h2>
+  <p>
+    نستخدم Supabase للمصادقة وقاعدة بيانات الحساب، وVercel لاستضافة لوحة الإدارة،
+    بالإضافة إلى Apple وGoogle عند اختيار تسجيل الدخول عبرهما. تخضع خدماتهم لسياسات الخصوصية الخاصة بهم.
+  </p>
+
+  <h2>9. الأطفال</h2>
   <p>التطبيق موجّه للبالغين لإدارة ميزانيتهم الشخصية ولا يستهدف الأطفال دون 13 سنة.</p>
 
-  <h2>9. التغييرات</h2>
+  <h2>10. التغييرات</h2>
   <p>قد نحدّث هذه السياسة. سنعدّل تاريخ «آخر تحديث» أعلاه. استمرارك في استخدام التطبيق بعد التحديث يعني موافقتك.</p>
 
-  <h2>10. التواصل</h2>
+  <h2>11. التواصل</h2>
   <p>
     للاستفسارات حول الخصوصية:<br />
-    <strong>البريد:</strong> info@cskwt.com<br />
-    <em>(استبدل هذا البريد ببريدك الحقيقي قبل النشر)</em>
+    <strong>البريد:</strong> info@cskwt.com
   </p>
 
   <div class="en">
     <h1>Privacy Policy — Daily Wallet</h1>
-    <p class="updated">Last updated: July 2026</p>
+    <p class="updated">Last updated: September 2026</p>
     <p>
-      Daily Wallet is a personal finance app. <strong>All financial data is stored locally on your device.</strong>
-      We do not operate backend servers, do not sell your data, and do not use it for advertising.
+      Daily Wallet is a personal finance app. <strong>Your financial records remain stored locally on your device.</strong>
+      Basic account data (name, email, country, sign-in provider, account dates, and subscription status)
+      is stored through Supabase for authentication, support, user counts, and future subscription management.
+      The protected owner dashboard does not expose your expenses, salary, commitments, or debts.
     </p>
     <p>
       <strong>Location</strong> (optional): used only for arrival reminders at saved places; not sent to our servers.<br />
       <strong>Notifications</strong> (optional): local reminders to log expenses and birthday greetings.<br />
-      <strong>Sign-in:</strong> email/password (stored locally), Apple Sign-In, or Google Sign-In.
+      <strong>Sign-in:</strong> managed by Supabase Auth using email/password, Apple Sign-In, or Google Sign-In.<br />
+      <strong>Processors:</strong> Supabase for authentication/account records and Vercel for the protected admin dashboard.
     </p>
-    <p>Contact: info@cskwt.com</p>
+    <p>You can delete your account from inside the app. Contact: info@cskwt.com</p>
   </div>
 </body>
 </html>
